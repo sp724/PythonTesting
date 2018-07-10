@@ -100,7 +100,7 @@ class Item:
 q = PriorityQueue()
 q.push(Item('foo'),1)
 q.push(Item('bar'),2)
-print("Recipe 1.5: ", q.pop())
+print("Recipe 1.5:", q.pop())
 
 
 # Recipe 1.6 Mapping Keys to Multiple Value in Dictionary
@@ -113,7 +113,7 @@ d['b'].append("second")
 d['c'].append("third")
 
 
-print("Recipe 1.6: ", d['b'])
+print("Recipe 1.6:", d['b'])
 
 # Recipe 1.7 Keeping Dictionaries in Order
 import json
@@ -189,7 +189,7 @@ def dedupe(items):
 
 
 a = [1, 5, 2, 1, 9, 1, 5, 10, 3]
-print("Recipe 1.10:",list(dedupe(a)),"\n")
+print("Recipe 1.10:",list(dedupe(a)))
 
 # Recipe 1.11 Slices
 mylist = [2**x for x in range(5)]
