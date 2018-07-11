@@ -207,4 +207,15 @@ top_three_words = word_count.most_common(3)
 print("Recipe 1.12:",top_three_words)
 
 # Recipe 1.13 Sorting a list of dictionary by a common key
-print("Recipe 1.13 Testing Testing")
+rows = [
+    {'fname':'suresh','lname':'patel'},
+    {'fname':'nina','lname':'patel'},
+    {'fname':'tuhina','lname':'kundu'}
+]
+
+from operator import itemgetter
+rows_by_fname = sorted(rows, key=itemgetter('fname'))
+rows_by_lname = sorted(rows, key=itemgetter('lname'),reverse=True)
+
+print("Recipe 1.13:",rows_by_lname)
+
