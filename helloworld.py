@@ -198,5 +198,12 @@ print("Recipe 1.11: Mylist before deletion:", mylist)
 del mylist[shares]
 print("Recipe 1.11: MyList after deletion:", mylist)
 
-# Recipe 1.12
-print("Testing...")
+# Recipe 1.12 Determining the most frequent occurences
+words = ['look','into','my','eyes','and','look','into']
+from collections import Counter
+words.append('look')
+word_count = Counter(words)
+top_three_words = word_count.most_common(3)
+print("Recipe 1.12:",top_three_words)
+
+# Recipe 1.13 Sorting a list of dictionary by a common key
