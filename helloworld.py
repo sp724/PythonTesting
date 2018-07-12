@@ -219,7 +219,14 @@ rows_by_lname = sorted(rows, key=itemgetter('lname'),reverse=True)
 
 print("Recipe 1.13:",rows_by_lname)
 
+# Recipe 1.14 Sorting Objects without Native Comparison
+class User:
+    def __init__(self,user_id):
+        self.user_id = user_id
+    def __repr__(self):
+        return 'User({})'.format(self.user_id)
 
-
-
+users = [User(50), User(20), User(30), User(51)]
+users_sorted = sorted(users, key = lambda u: u.user_id)
+print("Recipe 1.14:",users_sorted)
 
