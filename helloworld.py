@@ -226,7 +226,7 @@ class User:
     def __repr__(self):
         return 'User({})'.format(self.user_id)
 
-users = [User(50), User(20), User(30), User(51)]
+users = [User(1),User(50), User(20), User(30), User(51)]
 users_sorted = sorted(users, key = lambda u: u.user_id)
 print("Recipe 1.14:",users_sorted)
 
