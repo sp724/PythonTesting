@@ -230,3 +230,9 @@ users = [User(1),User(50), User(20), User(30), User(51)]
 users_sorted = sorted(users, key = lambda u: u.user_id)
 print("Recipe 1.14:",users_sorted)
 
+from operator import attrgetter
+users_sorted = sorted(users,key=attrgetter('user_id'),reverse=True)
+print("Recipe 1.14:",users_sorted)
+
+# Recipe 1.15
+
