@@ -28,14 +28,12 @@ y = np.c_[country_stats["Life satisfaction"]]
 country_stats.plot(kind='scatter', x='GDP per capita', y='Life satisfaction')
 plt.show()
 
-lin_reg_model = sklearn.linear_model.LinearRegression()
-lin_reg_model.fit(x,y)
+model = sklearn.linear_model.LinearRegression() # Linear Regression Model
+# model = sklearn.neighbors.KNeighborsRegressor(3) # Take average of X nearest neighbours
+model.fit(x,y)
 
 X_new = [[22587]]
-print(lin_reg_model.predict(X_new))
+print("Prediction {0}".format(model.predict(X_new)))
 
-#### print("Better Living Index",oecd_bli)
-#### print("IMF",gdp_per_capita)
-#### input("Press enter key...")
 
 
