@@ -17,6 +17,7 @@ def prepare_country_stats(oecd_bli, gdp_per_capita):
     keep_indices = list(set(range(36)) - set(remove_indices))
     return full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[keep_indices]
 
+
 oecd_bli = pd.read_csv("BLI_18072018042117821.csv", thousands=',')
 gdp_per_capita = pd.read_csv("WEO_Data.csv", thousands=',',delimiter='\t', encoding='latin1', na_values="n/a")
 
