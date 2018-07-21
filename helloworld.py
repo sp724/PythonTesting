@@ -312,5 +312,5 @@ Subscriber = namedtuple('Subscriber', ['addr', 'joined'])
 sub = Subscriber('jonesy@example.com', '2012-10-19')
 Subscriber(addr='jonesy@example.com', joined='2012-10-19')
 
-print("Recipe 1.18", sub.addr)
-print("Recipe 1.18", sub.joined)
+print("Recipe 1.18:", sub.addr)
+print("Recipe 1.18:", sub.joined)
