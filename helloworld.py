@@ -303,3 +303,14 @@ tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
 p2 = { key:value for key, value in prices.items() if key in tech_names }
 
 print("Recipe 1.17:", p1, p2)
+
+# 1.18 Mapping Names to Sequence Elements
+from collections import namedtuple
+
+Subscriber = namedtuple('Subscriber', ['addr', 'joined'])
+
+sub = Subscriber('jonesy@example.com', '2012-10-19')
+Subscriber(addr='jonesy@example.com', joined='2012-10-19')
+
+print("Recipe 1.18", sub.addr)
+print("Recipe 1.18", sub.joined)
