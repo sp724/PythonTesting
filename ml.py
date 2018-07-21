@@ -33,7 +33,7 @@ model = sklearn.linear_model.LinearRegression() # Linear Regression Model
 # model = sklearn.neighbors.KNeighborsRegressor(3) # Take average of X nearest neighbours
 model.fit(x,y)
 
-X_new = [[22587]]
+X_new = [[22588]]
 print("Prediction {0}".format(model.predict(X_new)))
 
 
