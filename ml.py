@@ -34,7 +34,7 @@ model = sklearn.linear_model.LinearRegression() # Linear Regression Model
 model.fit(x,y)
 
 X_new = [[22588]]
-print("Prediction for Life Statisfaction {0} for GDP per Capita {1}".format(model.predict(X_new),X_new))
+print("Predicting for Life Statisfaction {0} for GDP per Capita {1}".format(model.predict(X_new),X_new))
 
 
 
